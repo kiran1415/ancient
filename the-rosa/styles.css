@@ -13,8 +13,8 @@
   --secondary-font: "Herr Von Muellerhoff", cursive;
   --body-font: "Cabin", sans-serif;
   --main-font-color-dark: #f36d54; /* #252525;*/
-  --secondary-font-color: #06a64f; /* #c59d5f;*/
-  --body-font-color: #8fc640;
+  --secondary-font-color: #8fc640; /* #c59d5f;*/
+  --body-font-color: #06a64f;
 }
 
 html {
