@@ -12,6 +12,11 @@ html {
 img {
   width: 100%;
 }
+.products {
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
 
 body {
   width: 100%;
@@ -26,9 +31,11 @@ body {
   width: 100%;
   max-width: 98rem;
   padding: 5rem;
+  margin-top: 100px;
   background-color: #fff;
   box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
   display: flex;
+  float: left;
   align-items: center;
   border-radius: 0.8rem;
 }
@@ -53,7 +60,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(to right, #8fc640, #06a64f);
+  border: 2px solid #06a64f;
   box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
   border-radius: 0.8rem;
 }
