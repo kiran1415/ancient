@@ -12,11 +12,6 @@ html {
 img {
   width: 100%;
 }
-.products {
-  display: flex;
-  flex-direction: column;
-  float: left;
-}
 
 body {
   width: 100%;
@@ -39,6 +34,7 @@ body {
   align-items: center;
   border-radius: 0.8rem;
 }
+
 .product__image {
   min-width: 35rem;
   max-width: 35rem;
@@ -64,13 +60,22 @@ body {
   box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
   border-radius: 0.8rem;
 }
+
+.product__price {
+  display: flex;
+}
 .product__price span {
   display: block;
   color: rgba(0, 0, 0, 0.5);
-  font-size: 1.6rem;
+  font-size: 2.1rem;
   font-weight: 600;
+
   margin: 0.5rem 0;
 }
+.op {
+  padding-left: 50px;
+}
+
 .product__title {
   font-size: 2.5rem;
   margin: 1.5rem 0 2rem;
@@ -96,6 +101,21 @@ body {
 .product__cta:hover {
   background-image: linear-gradient(to right, #06a64f 0%, #8fc640 100%);
 }
+.product__buy {
+  display: inline;
+  padding: 1.5rem 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #fff;
+  background-image: linear-gradient(to right, #8fc640 0%, #06a64f 100%);
+  border-radius: 0.8rem;
+  text-decoration: none;
+  margin-left: 30px;
+}
+.product__buy:hover {
+  background-image: linear-gradient(to right, #06a64f 0%, #8fc640 100%);
+}
 
 @media screen and (max-width: 1068px) {
   .product__post {
@@ -104,6 +124,9 @@ body {
   .product__image {
     min-width: 30rem;
     max-width: 30rem;
+  }
+  .products {
+    margin-top: 200px;
   }
 }
 
@@ -122,5 +145,11 @@ body {
     min-width: 100%;
     max-width: 100%;
     transform: translate(0, -8rem);
+  }
+}
+@media screen and (min-device-width: 1081px) and (max-device-width: 3068px) {
+  .products {
+    margin-left: 50px;
+    margin-top: 1700px;
   }
 }
